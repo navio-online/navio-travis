@@ -12,7 +12,6 @@ class TestImport:
 
 class Test:
 
-
     def test_is_travis(self):
         from navio.travis import Travis
 
