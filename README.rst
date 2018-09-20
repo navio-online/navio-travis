@@ -1,6 +1,6 @@
 |Build Status|
 
-AWS boto3 helper libs
+Travis CI helper libs
 =====================
 
 Features
@@ -19,13 +19,13 @@ Using pip
 
 .. code:: bash
 
-   $ pip install navio-aws
+   $ pip install navio-travis
 
 Using easy_install
 
 .. code:: bash
 
-   $ easy_install navio-aws
+   $ easy_install navio-travis
 
 Example
 -------
@@ -36,9 +36,9 @@ Contributors/Contributing
 -------------------------
 
 If you want to make changes the repo is at
-https://github.com/navio-online/navio-aws. You will need
+https://github.com/navio-online/navio-travis. You will need
 `pytest <http://www.pytest.org>`__ to run the tests and
-`navio-builder <https://github.com/navio-online/navio-aws>`__ tool to
+`navio-builder <https://github.com/navio-online/navio-travis>`__ tool to
 build modules
 
 .. code:: bash
@@ -50,14 +50,14 @@ request <https://help.github.com/articles/using-pull-requests>`__ once
 you are done.
 
 If you find any bugs or need new features please raise a ticket in the
-`issues section <https://github.com/navio-online/navio-aws/issues>`__ of
-the github repo.
+`issues section <https://github.com/navio-online/navio-travis/issues>`__
+of the github repo.
 
 License
 -------
 
-navio-builder is licensed under a `MIT
-license <http://opensource.org/licenses/MIT>`__
+navio-travis is licensed under a `Apache 2.0
+license <http://www.apache.org/licenses/LICENSE-2.0>`__
 
-.. |Build Status| image:: https://travis-ci.org/navio-online/navio-aws.png?branch=master
-   :target: https://travis-ci.org/navio-online/navio-aws
+.. |Build Status| image:: https://travis-ci.org/navio-online/navio-travis.png?branch=master
+   :target: https://travis-ci.org/navio-online/navio-travis

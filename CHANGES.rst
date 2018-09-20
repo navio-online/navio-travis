@@ -1,8 +1,8 @@
 Changes
 =======
 
-0.1.0 - ??/12/2017
+0.1.0 - 20/09/2018
 ------------------
 
 -  Initial release.
--  CloudFormation API added
+-  Simple Travis envs
