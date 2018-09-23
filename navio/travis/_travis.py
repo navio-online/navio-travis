@@ -25,4 +25,4 @@ class Travis():
             return 'master'
 
     def commit_hash(self):
-        return os.environ.get('TRAVIS_COMMIT', None)
+        return os.environ.get('TRAVIS_COMMIT', '0'*30)
