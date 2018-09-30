@@ -59,8 +59,9 @@ class Test:
         from navio.travis import Travis
 
         os.environ['TRAVIS'] = 'true'
+        os.environ.pop('TRAVIS_COMMIT', None)
 
-        assert Travis().commit_hash() is None
+        assert '000000000000000000000000000000' == Travis().commit_hash()
 
         os.environ['TRAVIS_COMMIT'] = '1f510ab451bb4'
         assert '1f510ab451bb4' == Travis().commit_hash()
