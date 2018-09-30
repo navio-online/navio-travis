@@ -11,6 +11,7 @@ def apidoc():
     """
     Generate API documentation using epydoc.
     """
+    nsh.travis('lint')
     nsh.epydoc('--config', 'epydoc.config')
 
 
