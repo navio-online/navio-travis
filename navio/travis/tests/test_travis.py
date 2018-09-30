@@ -29,6 +29,7 @@ class Test:
     def test_is_pull_request(self):
         from navio.travis import Travis
 
+        os.environ.pop('TRAVIS_PULL_REQUEST', None)
         assert not Travis().is_pull_request()
 
         os.environ['TRAVIS'] = 'true'
@@ -46,6 +47,7 @@ class Test:
         from navio.travis import Travis
 
         os.environ['TRAVIS'] = 'true'
+        os.environ.pop('TRAVIS_BRANCH', None)
 
         assert Travis().branch() is None
 
