@@ -15,6 +15,7 @@ class Test:
     def test_is_travis(self):
         from navio.travis import Travis
 
+        os.environ.pop('TRAVIS', None)
         assert not Travis().is_travis()
 
         os.environ['TRAVIS'] = 'true'
