@@ -7,7 +7,9 @@ setup(
     author_email='oss@navio.online',
     url=navio.meta_travis.__website__,
     packages=['navio', 'navio.travis'],
-    install_requires=['boto3'],
+    install_requires=[],
+    setup_requires=['pytest-runner'],
+    tests_require=['pytest'],
     license='Apache 2.0 license',
     classifiers=[
         'Development Status :: 4 - Beta',
