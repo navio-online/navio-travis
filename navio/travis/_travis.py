@@ -26,3 +26,9 @@ class Travis():
 
     def commit_hash(self):
         return os.environ.get('TRAVIS_COMMIT', '0'*30)
+
+    def home_dir(self):
+        return os.environ.get('HOME', '/dev/null')
+
+    def build_dir(self):
+        return os.environ.get('TRAVIS_BUILD_DIR', '/dev/null')
