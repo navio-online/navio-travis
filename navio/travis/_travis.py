@@ -27,6 +27,15 @@ class Travis():
     def commit_hash(self):
         return os.environ.get('TRAVIS_COMMIT', '0'*30)
 
+    def tag(self):
+        return os.environ.get('TRAVIS_TAG', None)
+
+    def is_tag(self):
+        if os.environ.get('TRAVIS_TAG', False):
+            return True
+        else:
+            return False
+
     def home_dir(self):
         return os.environ.get('HOME', '/dev/null')
 
