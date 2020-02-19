@@ -28,7 +28,7 @@ class Travis():
         return os.environ.get('TRAVIS_COMMIT', '0' * 30)
 
     def short_commit_hash(self):
-        return os.environ.get('TRAVIS_COMMIT', '0' * 30)[:8]
+        return os.environ.get('TRAVIS_COMMIT', '0' * 30)[:7]
 
     def tag(self):
         return os.environ.get('TRAVIS_TAG', None)
